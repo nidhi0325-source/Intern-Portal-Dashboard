@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intern Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login / Signup</h1>
+    <input type="text" placeholder="Enter your name" id="nameInput" />
+    <button onclick="showDashboard()">Login</button>
+
+    <div class="dashboard" id="dashboard" style="display: none;">
+      <h2>Welcome, <span id="internName"></span>!</h2>
+      <p>Referral Code: <span id="referralCode"></span></p>
+      <p>Total Donations Raised: ₹<span id="donations"></span></p>
+      <h3>Rewards & Unlockables</h3>
+      <ul>
+        <li>🎁 Gold Tier - ₹50000</li>
+        <li>🎁 Silver Tier - ₹45000</li>
+        <li>🎁 Bronze Tier - ₹35000</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
